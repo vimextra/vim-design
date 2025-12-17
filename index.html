@@ -78,6 +78,13 @@
             z-index: 1000;
             border-bottom: 2px solid #ff4500;
         }
+        /* Media Query for mobile devices */
+         @media screen and (max-width: 768px) {
+        /* This rule applies when the screen width is 768px or less */
+      .nav {
+            display: none; /* Hides the entire navbar container */
+           }
+         }
 
         .nav-content {
             max-width: 1280px;
@@ -508,12 +515,7 @@
 </head>
 <body>
     <!-- Navigation -->
-   
-
-    <!-- Home Page -->
-    <div id="home" class="page active">
-        <div class="container">
-                 <nav class="nav">
+   <nav class="nav">
         <div class="nav-content">
             <div class="logo" onclick="showPage('home')">Vim Design</div>
             <div class="nav-links">
@@ -525,6 +527,10 @@
             </div>
         </div>
     </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="container">  
             <div class="hero">
                 <h1>Vim Design</h1>
                 <p class="hero-subtitle">Igniting Your Brand's Digital Presence</p>
@@ -562,18 +568,6 @@
     <!-- Graphic Design Page -->
     <div id="graphic" class="page">
         <div class="container">
-                 <nav class="nav">
-        <div class="nav-content">
-            <div class="logo" onclick="showPage('home')">Vim Design</div>
-            <div class="nav-links">
-                <button class="nav-link" onclick="showPage('home')">Home</button>
-                <button class="nav-link" onclick="showPage('graphic')">Graphic Design</button>
-                <button class="nav-link" onclick="showPage('web')">Web Development</button>
-                <button class="nav-link" onclick="showPage('social')">Social Media</button>
-                <button class="nav-link" onclick="showPage('growth')">Growth Strategy</button>
-            </div>
-        </div>
-    </nav>
             <div class="dept-hero">
                 <i data-lucide="palette" class="dept-hero-icon"></i>
                 <h1>Graphic Design</h1>
