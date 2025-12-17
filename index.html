@@ -512,7 +512,8 @@
 
     <!-- Home Page -->
     <div id="home" class="page active">
-         <nav class="nav">
+        <div class="container">
+                 <nav class="nav">
         <div class="nav-content">
             <div class="logo" onclick="showPage('home')">Vim Design</div>
             <div class="nav-links">
@@ -524,7 +525,6 @@
             </div>
         </div>
     </nav>
-        <div class="container">
             <div class="hero">
                 <h1>Vim Design</h1>
                 <p class="hero-subtitle">Igniting Your Brand's Digital Presence</p>
@@ -561,15 +561,19 @@
 
     <!-- Graphic Design Page -->
     <div id="graphic" class="page">
-         <div id="home" class="page active">
         <div class="container">
-            <div class="hero">
-               <div class="logo" onclick="showPage('home')"><h1>Vim Design</h1></div> 
-                <p class="hero-subtitle">Igniting Your Brand's Digital Presence</p>
-            </div>
+                 <nav class="nav">
+        <div class="nav-content">
+            <div class="logo" onclick="showPage('home')">Vim Design</div>
+            <div class="nav-links">
+                <button class="nav-link" onclick="showPage('home')">Home</button>
+                <button class="nav-link" onclick="showPage('graphic')">Graphic Design</button>
+                <button class="nav-link" onclick="showPage('web')">Web Development</button>
+                <button class="nav-link" onclick="showPage('social')">Social Media</button>
+                <button class="nav-link" onclick="showPage('growth')">Growth Strategy</button>
             </div>
         </div>
-        <div class="container">
+    </nav>
             <div class="dept-hero">
                 <i data-lucide="palette" class="dept-hero-icon"></i>
                 <h1>Graphic Design</h1>
